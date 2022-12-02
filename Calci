@@ -31,8 +31,7 @@ class MainPage(webapp2.RequestHandler):
             <input type='text' name='x' value='%s'/><br/>
             <input type='text' name='y'/><br/> 
             %s 
-            </form>
+            </form>  
             </body>
             </html>""" % (result, buttons))
-
 app = webapp2.WSGIApplication([('/', MainPage)], debug=True)
